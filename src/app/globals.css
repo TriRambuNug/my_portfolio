@@ -2,20 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 🌟 Default Theme Variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent: #3b82f6; /* Warna aksen (biru) */
+  --transition-speed: 0.3s;
 }
 
+/* 🌙 Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #09090b;
+    --foreground: #f4f4f5;
+    --accent: #60a5fa; /* Warna aksen lebih terang di dark mode */
+  }
+}
+
+/* ✨ Body Styling */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* 🌈 Smooth Theme Switching */
+[data-theme="dark"] {
+  --background: #09090b;
+  --foreground: #f4f4f5;
+  --accent: #60a5fa;
+}
+
+[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #171717;
+  --accent: #3b82f6;
+}
+
+/* 🔥 Animasi Fade-in Saat Halaman Dimuat */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 body {
-  color: var(--foreground);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* 🎨 Tambahan Style untuk Link */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+a:hover {
+  color: #2563eb; /* Biru yang lebih pekat */
+}
+
+/* 🖤 Card, Header, Footer dan Elemen Lain untuk Mode Gelap */
+header,
+footer,
+.card,
+button {
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* 🌙 Dark Mode Styling pada Card dan Button */
+[data-theme="dark"] header,
+[data-theme="dark"] footer,
+[data-theme="dark"] .card,
+[data-theme="dark"] button {
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--foreground);
+}
+
+
+/* Animasi fade-in dan gerakan vertikal */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/*type-cursor-display*/
+/* Sembunyikan cursor */
+.typed-cursor {
+  display: none;
 }
