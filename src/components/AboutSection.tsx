@@ -87,13 +87,7 @@ export default function AboutSection() {
             >
               View My Projects
             </a>
-
-            <a
-              href="#contact"
-              className="px-6 py-3 border border-white text-white dark:border-gray-100 dark:text-gray-100 font-semibold rounded-lg hover:bg-white hover:text-[#3b82f6] dark:hover:bg-gray-100 dark:hover:text-[#1e40af] transition duration-300 transform hover:scale-105"
-            >
-              Contact Me
-            </a>
+            
           </div>
         </div>
       </section>

@@ -26,11 +26,11 @@ const ProjectsSection: React.FC = () => {
       <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
         Projects
       </h2>
-      <div className="w-full max-w-4xl flex flex-col gap-12">
+      <div className="w-full max-w-4xl px-4 sm:px-0"> {/* Tambahkan px-4 untuk margin di mobile */}
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+            className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 mb-8" 
           >
             <img
               src={project.image}

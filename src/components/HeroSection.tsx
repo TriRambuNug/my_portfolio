@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-
 export default function HeroSection() {
   const { ref } = useInView({ triggerOnce: false, threshold: 0.2 });
 
@@ -10,7 +9,7 @@ export default function HeroSection() {
     <section
       ref={ref}
       id="home"
-      className="h-screen flex flex-col justify-center items-center text-center dark:bg-gray-900"
+      className="h-screen flex flex-col justify-center items-center text-center px-4 dark:bg-gray-900"
     >
       {/* Animasi fade-in dan slide-up hanya untuk teks */}
       <div className="max-w-2xl">
@@ -30,8 +29,8 @@ export default function HeroSection() {
         >
           I&apos;m{" "}
           <span className="font-semibold text-blue-600 dark:text-blue-400">
-          Tri Rambu Nugroho Prasetyo
-          </span  >
+            Tri Rambu Nugroho Prasetyo
+          </span>
           . Let&apos;s explore and collaborate!
         </motion.p>
       </div>
@@ -57,14 +56,10 @@ export default function HeroSection() {
         href="#projects"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-white hover:border-blue-600  transition"
+        className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-white hover:text-blue-600 hover:border-blue-600 border transition"
       >
         Explore My Projects
       </motion.a>
-
-      {/* <div className="mt-1 w-full">
-        <AnimatedWave />
-      </div> */}
     </section>
   );
 }

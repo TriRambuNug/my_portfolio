@@ -81,12 +81,6 @@ export default function Header() {
           >
             Projects
           </a>
-          <a
-            href="#contact"
-            className="text-gray-800 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-300"
-          >
-            Contact
-          </a>
         </nav>
 
         {/* Tombol Mode Gelap */}
