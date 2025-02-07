@@ -62,7 +62,10 @@ export default function HeroSection() {
         Explore My Projects
       </motion.a>
 
-      <AnimatedWave />
+      {/* Menghindari jeda dengan margin negatif */}
+      <div className="-mt-1 w-full">
+        <AnimatedWave />
+      </div>
     </section>
   );
 }
