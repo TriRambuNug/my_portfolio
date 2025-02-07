@@ -1,11 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import AnimatedWave from "./AnimatedWave";
 
 export default function HeroSection() {
-  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
+  const { ref } = useInView({ triggerOnce: false, threshold: 0.2 });
 
   return (
     <section
@@ -29,11 +28,11 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          I'm{" "}
+          I&apos;m{" "}
           <span className="font-semibold text-blue-600 dark:text-blue-400">
-            Tri Rambu Nugroho Prasetyo
-          </span>
-          . Let's explore and collaborate!
+          Tri Rambu Nugroho Prasetyo
+          </span  >
+          . Let&apos;s explore and collaborate!
         </motion.p>
       </div>
 
