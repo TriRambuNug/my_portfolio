@@ -58,7 +58,7 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center">
         {/* 🔥 Tambahkan kontras pada teks header */}
         <h1 className="text-xl font-bold text-gray-900 dark:text-white">
-          Tri Rambu Nugroho Prasetyo
+          Rambu
         </h1>
 
         {/* Navbar */}

@@ -63,7 +63,7 @@ export default function HeroSection() {
       </motion.a>
 
       {/* Menghindari jeda dengan margin negatif */}
-      <div className="-mt-1 w-full">
+      <div className="mt-1 w-full">
         <AnimatedWave />
       </div>
     </section>
