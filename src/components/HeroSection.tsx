@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import AnimatedWave from "./AnimatedWave";
+
 
 export default function HeroSection() {
   const { ref } = useInView({ triggerOnce: false, threshold: 0.2 });
@@ -62,10 +62,9 @@ export default function HeroSection() {
         Explore My Projects
       </motion.a>
 
-      {/* Menghindari jeda dengan margin negatif */}
-      <div className="mt-1 w-full">
+      {/* <div className="mt-1 w-full">
         <AnimatedWave />
-      </div>
+      </div> */}
     </section>
   );
 }
