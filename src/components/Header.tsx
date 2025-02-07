@@ -81,6 +81,12 @@ export default function Header() {
           >
             Projects
           </a>
+          <a
+            href="#footer"
+            className="text-gray-800 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-300"
+          >
+            Contact
+          </a>
         </nav>
 
         {/* Tombol Mode Gelap */}
@@ -130,7 +136,7 @@ export default function Header() {
             Projects
           </a>
           <a
-            href="#contact"
+            href="#footer"
             className="block py-2 text-gray-800 dark:text-gray-300"
           >
             Contact

@@ -5,7 +5,8 @@ import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-gray-800 to-gray-900 text-white shadow-inner p-8">
+    <footer className="bg-gradient-to-r from-gray-800 to-gray-900 text-white shadow-inner p-8"
+    id="footer">
       <div className="container mx-auto flex flex-col items-center space-y-8">
         {/* Kontak dan Ikon Sosial Media */}
         <section className="w-full max-w-3xl text-center">
